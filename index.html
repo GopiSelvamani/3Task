@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game Match Maker's</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="https://fonts.googleapis.com/css?family=Chicle" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tile Match</h1>
+            <div class="dashboard">
+                <div class="dashboard-element">
+                    <i class="dashboard-icon fa-solid fa-stopwatch"></i><span id="timer"></span>
+                </div>
+                <div class="dashboard-element">
+                    <i class="dashboard-icon fa-solid fa-clone"></i><span id="moves"></span>
+                </div>
+            </div>
+        <div id="stars">
+            <i class="fa-solid fa-star" id="rating-poor"></i>
+            <i class="fa-solid fa-star" id="rating-average"></i>
+            <i class="fa-solid fa-star" id="rating-perfect"></i>
+        </div>
+
+        <div id="form">
+            <input type="radio" id="normalMode" name="difficulty" value="normal" checked="checked">
+            <label class="checked" for="normalMode">Game Board Normal</label>
+        </div>
+        <div class="game-board">
+        </div>
+        <i id="reset" class="fa-solid fa-rotate-right"></i>
+    </div>
+
+    <div class="modal">
+        <div class="modal-inner">
+            <h3>Well done!</h3>
+            <p class="modal-text">You Solved it in <span id="final-time"></span>seconds with <span id="final-moves"></span>moves</p>
+            <p class="modal-text" id="final-rating"></p>
+            <p class="modal-text" id="replay"><i class="fa-solid fa-rotate-right"> Play again?</i></p>
+        </div>
+    </div>
+    <script type="text/javascript" src="./app.js"></script>
+</body>
+</html>
